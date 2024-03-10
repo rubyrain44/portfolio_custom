@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0p;
+    display: flex;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 100px;
+    text-shadow: 3px 3px limegreen;
+}
+
+.mainContent {
+    display: flex;
+    width: 90%;
+    margin: 10px;
+}
+
+.leftContent {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 900px;
+    height: 700px;
+    border: 2px solid black;
+    box-shadow: 3px 3px limegreen;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.intro, .background, .portfolio, .aboutme, .contact {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    box-shadow: 3px 3px limegreen;
+    color: white;
+}
