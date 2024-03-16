@@ -9,14 +9,24 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./img/fluid-bg.png);
 }
 
+/* TOP CONTENT */
 h1 {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     font-size: 100px;
     text-shadow: 3px 3px limegreen;
+    animation: fadeInTop 1.5s;
 }
 
+/* @keyframes headerFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+} */
+
+
+/* BODY CONTENT */
 .mainContent {
     display: flex;
     width: 90%;
@@ -26,11 +36,23 @@ h1 {
 .leftContent {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 900px;
     height: 700px;
     border: 2px solid black;
     box-shadow: 3px 3px limegreen;
+    animation: fadeInRight 1.5s;
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .rightContent {
@@ -47,4 +69,24 @@ h1 {
     background-color: black;
     box-shadow: 3px 3px limegreen;
     color: white;
+    animation: fadeInTop 1.5s;
+}
+
+h2 {
+    color: white;
+    text-shadow: 1px 1px limegreen;
+}
+
+@keyframes fadeInTop {
+    0%{
+        /* beginning of aniamtion */
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        /* at the end of the length of the animation (1.2s in this case) */
+        opacity: 1;
+        transform: translateY(0px);
+        /* this animation means it will start at -50px from the top, and slide back to its location at the end of the animation length */
+    }
 }
